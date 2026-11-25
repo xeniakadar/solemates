@@ -1,3 +1,18 @@
+# What I Stand On
+
+The exhibition experience, built on the class pix2pix template (original template notes are below).
+
+- `index.html` + `main.js` + `styles.css`: Home, Instructions, Camera, Preview, Result, Wall, Dataset. Each screen is a `#hash` in the one page.
+- `about.html` + `about.css`: the about page the QR code points to.
+- `assets/shoes.pict`: the trained model. `assets/overlay.png`: the blob stamped on every photo before it goes to the model.
+- `assets/dataset/`: 26 sample pairs (two per shoe) for the dataset screen, listed in `manifest.json`.
+- Settings (model path, camera, guide size, dither, wall size) are at the top of `main.js`.
+- The wall is stored in the browser (`localStorage`), so it only shows posts made on the same device.
+
+Run it with Live Server or `python3 -m http.server 8000`, as described below.
+
+---
+
 # Template video to image --  pix2pix (p5.js + ml5.js)
 
 Point your webcam at something and a trained pix2pix model turns the current frame into an image. The output is then color-dithered.

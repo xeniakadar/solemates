@@ -1,0 +1,71 @@
+/* About page. Builds on styles.css. */
+
+.about { font-size: 17px; }
+.about h1 { font-size: clamp(40px, 7vw, 64px); }
+.about h2 { font-size: 28px; }
+.about p { max-width: 38em; }
+
+.about-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 24px;
+  padding: 16px max(28px, calc((100vw - 1000px) / 2));
+  font-size: 15px;
+}
+.about-nav a { color: var(--text); text-decoration: none; padding: 10px 0; display: inline-block; }
+.about-nav div { display: flex; flex-wrap: wrap; gap: 0 22px; }
+.about-nav a:hover { text-decoration: underline; }
+.about-home { font-weight: 600; }
+
+.band {
+  padding: 56px max(28px, calc((100vw - 1000px) / 2));
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.band.grey { background: #f3f3f3; }
+.band.split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+.band.split > div:not(.ph) { display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
+
+.lede-left { color: var(--muted); font-size: 19px; }
+
+/* Grey boxes mark images that still need to be added */
+.ph {
+  background: var(--fill);
+  border: 1px solid var(--line);
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+.ph-wide { aspect-ratio: 3 / 1; }
+
+.hero-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
+.hero-grid img, .shoe-row img, .three img { width: 100%; aspect-ratio: 1; display: block; background: var(--fill); }
+
+.shoe-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 16px 12px; }
+.shoe-row figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; text-transform: capitalize; }
+
+.three { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+.three figcaption { font-size: 14px; color: var(--muted); margin-top: 10px; }
+.three figcaption strong { display: block; color: var(--text); margin-bottom: 4px; }
+.side-by-side { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; aspect-ratio: 1; align-content: center; background: var(--fill); }
+
+.stat { font-size: 15px; color: var(--muted); }
+.stat a { color: var(--text); }
+
+.about .grid img { background: var(--fill); }
+
+@media (max-width: 600px) {
+  .hero-grid { grid-template-columns: repeat(4, 1fr); }
+}

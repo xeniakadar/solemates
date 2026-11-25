@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · What I Stand On</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./about.css">
+</head>
+
+<body class="about">
+
+  <nav class="about-nav">
+    <a class="about-home" href="index.html">What I Stand On</a>
+    <div>
+      <a href="#idea">Idea</a>
+      <a href="#dataset">Dataset</a>
+      <a href="#training">Training</a>
+      <a href="#findings">Findings</a>
+      <a href="index.html#instructions">Try it</a>
+    </div>
+  </nav>
+
+  <header class="band">
+    <h1>What I Stand On</h1>
+    <p class="lede-left">A pix2pix model trained on my own photos. Give it a piece of ground and it decides which of my shoes belongs there.</p>
+    <div class="hero-grid">
+        <img src="assets/dataset/ganni_2_b.jpg" alt="ganni on the ground" loading="lazy">
+        <img src="assets/dataset/jimmy_choo_2_b.jpg" alt="jimmy choo on the ground" loading="lazy">
+        <img src="assets/dataset/la_canadienne_2_b.jpg" alt="la canadienne on the ground" loading="lazy">
+        <img src="assets/dataset/lachoix_2_b.jpg" alt="lachoix on the ground" loading="lazy">
+        <img src="assets/dataset/lapti_2_b.jpg" alt="lapti on the ground" loading="lazy">
+        <img src="assets/dataset/llbean_2_b.jpg" alt="llbean on the ground" loading="lazy">
+        <img src="assets/dataset/reformation_red_2_b.jpg" alt="reformation red on the ground" loading="lazy">
+        <img src="assets/dataset/reformation_white_2_b.jpg" alt="reformation white on the ground" loading="lazy">
+        <img src="assets/dataset/repetto_2_b.jpg" alt="repetto on the ground" loading="lazy">
+        <img src="assets/dataset/uggs_2_b.jpg" alt="uggs on the ground" loading="lazy">
+        <img src="assets/dataset/valenki_2_b.jpg" alt="valenki on the ground" loading="lazy">
+        <img src="assets/dataset/veja_2_b.jpg" alt="veja on the ground" loading="lazy">
+    </div>
+  </header>
+
+  <section class="band grey split" id="idea">
+    <div>
+      <h2>Why shoes</h2>
+      <!-- DRAFT COPY: rewrite in your own words -->
+      <p>Shoes are the hardest part of getting dressed. Everything else can be layered, swapped or hidden under a coat, but you only get one pair, and it has to work with wherever you are going to walk.</p>
+      <p>So I trained a model to make that decision the way I do: by looking down.</p>
+    </div>
+    <div class="ph">Photo</div>
+  </section>
+
+  <section class="band">
+    <h2>One shoe for every ground</h2>
+    <p>Each pair was photographed from straight above, on the surface it belongs to. The rule the model learns is the pairing, not the place.</p>
+    <div class="shoe-row">
+        <figure><img src="assets/dataset/ganni_1_b.jpg" alt="" loading="lazy"><figcaption>ganni</figcaption></figure>
+        <figure><img src="assets/dataset/jimmy_choo_1_b.jpg" alt="" loading="lazy"><figcaption>jimmy choo</figcaption></figure>
+        <figure><img src="assets/dataset/la_canadienne_1_b.jpg" alt="" loading="lazy"><figcaption>la canadienne</figcaption></figure>
+        <figure><img src="assets/dataset/lachoix_1_b.jpg" alt="" loading="lazy"><figcaption>lachoix</figcaption></figure>
+        <figure><img src="assets/dataset/lapti_1_b.jpg" alt="" loading="lazy"><figcaption>lapti</figcaption></figure>
+        <figure><img src="assets/dataset/llbean_1_b.jpg" alt="" loading="lazy"><figcaption>llbean</figcaption></figure>
+        <figure><img src="assets/dataset/reformation_red_1_b.jpg" alt="" loading="lazy"><figcaption>reformation red</figcaption></figure>
+        <figure><img src="assets/dataset/reformation_white_1_b.jpg" alt="" loading="lazy"><figcaption>reformation white</figcaption></figure>
+        <figure><img src="assets/dataset/repetto_1_b.jpg" alt="" loading="lazy"><figcaption>repetto</figcaption></figure>
+        <figure><img src="assets/dataset/uggs_1_b.jpg" alt="" loading="lazy"><figcaption>uggs</figcaption></figure>
+        <figure><img src="assets/dataset/valenki_1_b.jpg" alt="" loading="lazy"><figcaption>valenki</figcaption></figure>
+        <figure><img src="assets/dataset/veja_1_b.jpg" alt="" loading="lazy"><figcaption>veja</figcaption></figure>
+        <figure><img src="assets/dataset/zara_1_b.jpg" alt="" loading="lazy"><figcaption>zara</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="band grey" id="dataset">
+    <h2>Making the dataset</h2>
+    <div class="three">
+      <figure>
+        <img src="assets/dataset/reformation_red_1_b.jpg" alt="Red shoes photographed on the ground" loading="lazy">
+        <figcaption><strong>1 Photograph</strong>The shoes on the ground, no feet, centred in a square frame.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/dataset/reformation_red_1_a.jpg" alt="The same photo with a black shape covering the shoes" loading="lazy">
+        <figcaption><strong>2 Cover the shoe</strong>The same photo with one fixed black shape over the shoes.</figcaption>
+      </figure>
+      <figure>
+        <div class="side-by-side">
+          <img src="assets/dataset/reformation_red_1_a.jpg" alt="" loading="lazy">
+          <img src="assets/dataset/reformation_red_1_b.jpg" alt="" loading="lazy">
+        </div>
+        <figcaption><strong>3 Pair them</strong>The covered photo is what the model is shown. The original is what it learns to make.</figcaption>
+      </figure>
+    </div>
+    <p class="stat">1,457 pairs, including mirrored copies. <a href="index.html#dataset">View the dataset</a></p>
+  </section>
+
+  <section class="band" id="training">
+    <h2>Training the model</h2>
+    <p>The first training run took about 14 hours on my laptop and reached 103 epochs. By epoch 10 a recognisable shoe shape had already emerged.</p>
+    <div class="three">
+      <figure><div class="ph ph-wide">input · output · target</div><figcaption><strong>First hour</strong></figcaption></figure>
+      <figure><div class="ph ph-wide">input · output · target</div><figcaption><strong>Epoch 20</strong></figcaption></figure>
+      <figure><div class="ph ph-wide">input · output · target</div><figcaption><strong>Epoch 100</strong></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="band grey" id="findings">
+    <h2>What the model learned</h2>
+    <div class="three">
+      <figure>
+        <div class="ph">Flat green test</div>
+        <figcaption><strong>It chooses by colour</strong>The model picks the shoe mostly from the colour of the ground, not its texture. A flat green square was enough to get the flats I photographed on grass.</figcaption>
+      </figure>
+      <figure>
+        <div class="ph">Unseen carpet and leaves</div>
+        <figcaption><strong>New grounds, familiar shoes</strong>New photos of surfaces like the ones it trained on get the right shoe. Grounds it has never seen, like sky or a plain background, get something that only looks like shoes.</figcaption>
+      </figure>
+      <figure>
+        <div class="ph">Sky: before and after</div>
+        <figcaption><strong>The blob has to match</strong>When the black shape was slightly the wrong size, the result was a smudge. With the exact shape, it made shoes. That is why this site applies one fixed blob.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band split">
+    <div class="ph">Photo: table, iPad, prints</div>
+    <div>
+      <h2>At the exhibition</h2>
+      <p>A table of printed grounds and an iPad. Visitors slide a ground under the camera, take a photo, and the model fills in the shoe.</p>
+      <a class="btn btn-solid" href="index.html#instructions">Try it</a>
+    </div>
+  </section>
+
+  <section class="band grey">
+    <h2>Made by visitors</h2>
+    <div class="grid" id="visitorGrid"></div>
+    <p class="empty" id="visitorEmpty">Nothing has been posted on this device yet.</p>
+  </section>
+
+  <script>
+    // Shows the wall posts saved in this browser (same storage as the experience).
+    try {
+      var posts = JSON.parse(localStorage.getItem("what-i-stand-on-wall")) || [];
+      var grid = document.getElementById("visitorGrid");
+      posts.slice(0, 12).forEach(function (p) {
+        var img = document.createElement("img");
+        img.src = p.img;
+        img.alt = "A shoe generated for a visitor's photo of the ground";
+        grid.appendChild(img);
+      });
+      document.getElementById("visitorEmpty").hidden = posts.length > 0;
+    } catch (err) {}
+  </script>
+</body>
+
+</html>

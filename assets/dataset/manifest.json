@@ -1,0 +1,132 @@
+[
+ {
+  "shoe": "ganni",
+  "a": "assets/dataset/ganni_1_a.jpg",
+  "b": "assets/dataset/ganni_1_b.jpg"
+ },
+ {
+  "shoe": "ganni",
+  "a": "assets/dataset/ganni_2_a.jpg",
+  "b": "assets/dataset/ganni_2_b.jpg"
+ },
+ {
+  "shoe": "jimmy_choo",
+  "a": "assets/dataset/jimmy_choo_1_a.jpg",
+  "b": "assets/dataset/jimmy_choo_1_b.jpg"
+ },
+ {
+  "shoe": "jimmy_choo",
+  "a": "assets/dataset/jimmy_choo_2_a.jpg",
+  "b": "assets/dataset/jimmy_choo_2_b.jpg"
+ },
+ {
+  "shoe": "la_canadienne",
+  "a": "assets/dataset/la_canadienne_1_a.jpg",
+  "b": "assets/dataset/la_canadienne_1_b.jpg"
+ },
+ {
+  "shoe": "la_canadienne",
+  "a": "assets/dataset/la_canadienne_2_a.jpg",
+  "b": "assets/dataset/la_canadienne_2_b.jpg"
+ },
+ {
+  "shoe": "lachoix",
+  "a": "assets/dataset/lachoix_1_a.jpg",
+  "b": "assets/dataset/lachoix_1_b.jpg"
+ },
+ {
+  "shoe": "lachoix",
+  "a": "assets/dataset/lachoix_2_a.jpg",
+  "b": "assets/dataset/lachoix_2_b.jpg"
+ },
+ {
+  "shoe": "lapti",
+  "a": "assets/dataset/lapti_1_a.jpg",
+  "b": "assets/dataset/lapti_1_b.jpg"
+ },
+ {
+  "shoe": "lapti",
+  "a": "assets/dataset/lapti_2_a.jpg",
+  "b": "assets/dataset/lapti_2_b.jpg"
+ },
+ {
+  "shoe": "llbean",
+  "a": "assets/dataset/llbean_1_a.jpg",
+  "b": "assets/dataset/llbean_1_b.jpg"
+ },
+ {
+  "shoe": "llbean",
+  "a": "assets/dataset/llbean_2_a.jpg",
+  "b": "assets/dataset/llbean_2_b.jpg"
+ },
+ {
+  "shoe": "reformation_red",
+  "a": "assets/dataset/reformation_red_1_a.jpg",
+  "b": "assets/dataset/reformation_red_1_b.jpg"
+ },
+ {
+  "shoe": "reformation_red",
+  "a": "assets/dataset/reformation_red_2_a.jpg",
+  "b": "assets/dataset/reformation_red_2_b.jpg"
+ },
+ {
+  "shoe": "reformation_white",
+  "a": "assets/dataset/reformation_white_1_a.jpg",
+  "b": "assets/dataset/reformation_white_1_b.jpg"
+ },
+ {
+  "shoe": "reformation_white",
+  "a": "assets/dataset/reformation_white_2_a.jpg",
+  "b": "assets/dataset/reformation_white_2_b.jpg"
+ },
+ {
+  "shoe": "repetto",
+  "a": "assets/dataset/repetto_1_a.jpg",
+  "b": "assets/dataset/repetto_1_b.jpg"
+ },
+ {
+  "shoe": "repetto",
+  "a": "assets/dataset/repetto_2_a.jpg",
+  "b": "assets/dataset/repetto_2_b.jpg"
+ },
+ {
+  "shoe": "uggs",
+  "a": "assets/dataset/uggs_1_a.jpg",
+  "b": "assets/dataset/uggs_1_b.jpg"
+ },
+ {
+  "shoe": "uggs",
+  "a": "assets/dataset/uggs_2_a.jpg",
+  "b": "assets/dataset/uggs_2_b.jpg"
+ },
+ {
+  "shoe": "valenki",
+  "a": "assets/dataset/valenki_1_a.jpg",
+  "b": "assets/dataset/valenki_1_b.jpg"
+ },
+ {
+  "shoe": "valenki",
+  "a": "assets/dataset/valenki_2_a.jpg",
+  "b": "assets/dataset/valenki_2_b.jpg"
+ },
+ {
+  "shoe": "veja",
+  "a": "assets/dataset/veja_1_a.jpg",
+  "b": "assets/dataset/veja_1_b.jpg"
+ },
+ {
+  "shoe": "veja",
+  "a": "assets/dataset/veja_2_a.jpg",
+  "b": "assets/dataset/veja_2_b.jpg"
+ },
+ {
+  "shoe": "zara",
+  "a": "assets/dataset/zara_1_a.jpg",
+  "b": "assets/dataset/zara_1_b.jpg"
+ },
+ {
+  "shoe": "zara",
+  "a": "assets/dataset/zara_2_a.jpg",
+  "b": "assets/dataset/zara_2_b.jpg"
+ }
+]
